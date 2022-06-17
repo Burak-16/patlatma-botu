@@ -2,9 +2,9 @@
   "name": "-asdf",
   "version": "1.0.0",
   "description": "",
-  "main": "tokyo.js",
+  "main": "burak.js",
   "scripts": {
-    "start": "node tokyo.js"
+    "start": "node burak.js"
   },
   "engines": {
     "node": "12.x"
